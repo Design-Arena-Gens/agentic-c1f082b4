@@ -1,0 +1,42 @@
+:root {
+  color-scheme: light dark;
+  --bg-primary: #0b0c10;
+  --bg-secondary: #1f2833;
+  --text-primary: #c5c6c7;
+  --accent: #66fcf1;
+  --accent-strong: #45a29e;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, rgba(102, 252, 241, 0.1), transparent 45%),
+    radial-gradient(circle at bottom right, rgba(69, 162, 158, 0.15), transparent 40%),
+    var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 2.5rem 1rem 4rem;
+  }
+}
